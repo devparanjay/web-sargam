@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swar Sadhana — The Seven Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-orb bg-orb--3"></div>
+
+  <main class="container">
+    <header class="hero">
+      <p class="eyebrow">Indian Classical Music</p>
+      <h1 class="title">The Seven <span class="title__accent">Swaras</span></h1>
+      <p class="subtitle">
+        Tap a note to hear its sound. Together, they form the foundation
+        of every raga ever composed.
+      </p>
+    </header>
+
+    <section class="swaras" aria-label="Seven swaras">
+      <button class="swara" data-note="Sa"  data-freq="261.63" style="--hue: 12;">
+        <span class="swara__glyph">सा</span>
+        <span class="swara__roman">Sa</span>
+        <span class="swara__name">Shadja</span>
+      </button>
+
+      <button class="swara" data-note="Re"  data-freq="293.66" style="--hue: 32;">
+        <span class="swara__glyph">रे</span>
+        <span class="swara__roman">Re</span>
+        <span class="swara__name">Rishabh</span>
+      </button>
+
+      <button class="swara" data-note="Ga"  data-freq="329.63" style="--hue: 48;">
+        <span class="swara__glyph">ग</span>
+        <span class="swara__roman">Ga</span>
+        <span class="swara__name">Gandhar</span>
+      </button>
+
+      <button class="swara" data-note="Ma"  data-freq="349.23" style="--hue: 145;">
+        <span class="swara__glyph">म</span>
+        <span class="swara__roman">Ma</span>
+        <span class="swara__name">Madhyam</span>
+      </button>
+
+      <button class="swara" data-note="Pa"  data-freq="392.00" style="--hue: 195;">
+        <span class="swara__glyph">प</span>
+        <span class="swara__roman">Pa</span>
+        <span class="swara__name">Pancham</span>
+      </button>
+
+      <button class="swara" data-note="Dha" data-freq="440.00" style="--hue: 260;">
+        <span class="swara__glyph">ध</span>
+        <span class="swara__roman">Dha</span>
+        <span class="swara__name">Dhaivat</span>
+      </button>
+
+      <button class="swara" data-note="Ni"  data-freq="493.88" style="--hue: 300;">
+        <span class="swara__glyph">नि</span>
+        <span class="swara__roman">Ni</span>
+        <span class="swara__name">Nishad</span>
+      </button>
+    </section>
+
+    <p class="now-playing" id="nowPlaying" aria-live="polite"></p>
+
+    <footer class="foot">
+      <span>Sa · Re · Ga · Ma · Pa · Dha · Ni</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
